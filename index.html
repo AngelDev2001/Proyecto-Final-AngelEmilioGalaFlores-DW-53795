@@ -23,13 +23,14 @@
   </head>
   <body>
     <div class="root position-relative">
-      <header>
-        <nav
-          class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0 left-0"
-        >
+      <header class="position-sticky top-0 left-0">
+        <nav class="navbar navbar-expand-lg top-0 left-0">
           <div class="container">
             <a class="navbar-brand logo" href="./index.html">
-              <img src="./assets/images/logo-light.webp" alt="">
+              <img
+                src="./assets/images/logo-dark.webp"
+                alt="Logo de Muebles DC"
+              />
             </a>
             <button
               class="navbar-toggler"
@@ -43,9 +44,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav ms-auto text-center fw-5">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link" aria-current="page" href="#"
                     >Inicio</a
                   >
                 </li>
@@ -65,13 +66,15 @@
             </div>
           </div>
         </nav>
-        <section class="hero container-fluid">
-          <div class="row pb-4">
+      </header>
+      <section class="hero">
+        <div class="container">
+          <div class="row flex-md-row-reverse py-4">
             <div class="hero__image col-12 col-md-6 mb-2">
               <img
                 class=""
                 src="./assets/images/hero-image.webp"
-                alt="Mueble de sala hecho de madera."
+                alt="Mueble de sala hecho de madera"
               />
             </div>
             <div class="hero__text col-12 col-md-6">
@@ -88,10 +91,10 @@
               ></a>
             </div>
           </div>
-        </section>
-      </header>
+        </div>
+      </section>
       <main>
-        <div class="container-fluid">
+        <div class="container">
           <section class="categories-section row py-4 gy-4">
             <article class="categories-section__information col-12">
               <h2>Descubre Nuestra Variedad</h2>
@@ -100,53 +103,60 @@
                 hogar u oficina. Encuentra lo que necesitas fácilmente.
               </p>
             </article>
-            <article class="categories-section__category col-12">
-              <a href="#">
-                <img src="./assets/images/kitchen-dining-image.webp" alt="" />
-              </a>
-              <div>
-                <h2>Cocina y Comedor</h2>
-                <a class="btn btn-primary" href="#"
-                  >Ver más <i class="fa-solid fa-arrow-right-long"></i
-                ></a>
+            <div class="col-12">
+              <div class="row g-4">
+                <article class="categories-section__category col-12 col-md-6">
+                  <a href="#">
+                    <img
+                      src="./assets/images/kitchen-dining-image.webp"
+                      alt="Mesa de madera con 4 sillas de para cocina comedor"
+                    />
+                  </a>
+                  <div>
+                    <h2>Cocina y Comedor</h2>
+                    <a class="btn btn-primary" href="#"
+                      >Ver más <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </article>
+                <article class="categories-section__category col-12 col-md-6">
+                  <a href="#">
+                    <img
+                      src="./assets/images/living-room-entertainment-image.webp"
+                      alt="Muebles de madera con varias particiones para sala"
+                    />
+                  </a>
+                  <div>
+                    <h2>Salón y entretenimiento</h2>
+                    <a class="btn btn-primary" href="#"
+                      >Ver más <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </article>
+                <article class="categories-section__category col-12 col-md-6">
+                  <a href="#">
+                    <img src="./assets/images/bedroom-image.webp" alt="Ropero de madera para domitorio" />
+                  </a>
+                  <div>
+                    <h2>Dormitorio</h2>
+                    <a class="btn btn-primary" href="#"
+                      >Ver más <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </article>
+                <article class="categories-section__category col-12 col-md-6">
+                  <a href="#">
+                    <img src="./assets/images/office-study.webp" alt="Mueble para oficina y escritorio" />
+                  </a>
+                  <div>
+                    <h2>Oficina y Estudio</h2>
+                    <a class="btn btn-primary" href="#"
+                      >Ver más <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </article>
               </div>
-            </article>
-            <article class="categories-section__category col-12">
-              <a href="#">
-                <img
-                  src="./assets/images/living-room-entertainment-image.webp"
-                  alt=""
-                />
-              </a>
-              <div>
-                <h2>Salón y entretenimiento</h2>
-                <a class="btn btn-primary" href="#"
-                  >Ver más <i class="fa-solid fa-arrow-right-long"></i
-                ></a>
-              </div>
-            </article>
-            <article class="categories-section__category col-12">
-              <a href="#">
-                <img src="./assets/images/bedroom-image.webp" alt="" />
-              </a>
-              <div>
-                <h2>Dormitorio</h2>
-                <a class="btn btn-primary" href="#"
-                  >Ver más <i class="fa-solid fa-arrow-right-long"></i
-                ></a>
-              </div>
-            </article>
-            <article class="categories-section__category col-12">
-              <a href="#">
-                <img src="./assets/images/office-study.webp" alt="" />
-              </a>
-              <div>
-                <h2>Oficina y Estudio</h2>
-                <a class="btn btn-primary" href="#"
-                  >Ver más <i class="fa-solid fa-arrow-right-long"></i
-                ></a>
-              </div>
-            </article>
+            </div>
           </section>
           <section class="products-section row py-4">
             <div class="col-12">
@@ -157,19 +167,21 @@
               </p>
             </div>
             <div class="col-12">
-              <div class="row">
-                <article class="products-section__product col-6">
+              <div class="row g-4">
+                <article
+                  class="products-section__product col-6 col-md-4 col-lg-3"
+                >
                   <div>
                     <img
-                      src="https://754969b0.rocketcdn.me/furnob/wp-content/uploads/2021/12/hay-1-600x684.jpg"
-                      alt=""
+                      src="./assets/images/mueble-cocina-1.webp"
+                      alt="Mueble moderno de cocina"
                     />
                   </div>
                   <div>
-                    <h3>Delphine Cane Velvet Accent Chair</h3>
+                    <h3>Mueble de cocina 94cm</h3>
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Praesentium.
+                      Diseño moderno para cocinas actuales. Ahorra espacio y
+                      mantiene tus alimentos y menaje accesibles.
                     </p>
                     <div class="evaluation">
                       <i class="fa-solid fa-star"></i>
@@ -180,18 +192,20 @@
                     </div>
                   </div>
                 </article>
-                <article class="products-section__product col-6">
+                <article
+                  class="products-section__product col-6 col-md-4 col-lg-3"
+                >
                   <div>
                     <img
-                      src="https://754969b0.rocketcdn.me/furnob/wp-content/uploads/2021/12/hay-1-600x684.jpg"
-                      alt=""
+                      src="./assets/images/mueble-cocina-2.webp"
+                      alt="Mueble de cocina elaborado con MDP"
                     />
                   </div>
                   <div>
-                    <h3>Delphine Cane Velvet Accent Chair</h3>
+                    <h3>Mueble de cocina 90cm</h3>
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Praesentium.
+                      Elaborado con MDP y pintura UV de alto brillo. Patas
+                      elaboradas en madera.
                     </p>
                     <div class="evaluation">
                       <i class="fa-solid fa-star"></i>
@@ -202,18 +216,20 @@
                     </div>
                   </div>
                 </article>
-                <article class="products-section__product col-6">
+                <article
+                  class="products-section__product col-6 col-md-4 col-lg-3"
+                >
                   <div>
                     <img
-                      src="https://754969b0.rocketcdn.me/furnob/wp-content/uploads/2021/12/hay-1-600x684.jpg"
-                      alt=""
+                      src="./assets/images/mueble-dormitorio-1.webp"
+                      alt=" Comoda de 4 cajones"
                     />
                   </div>
                   <div>
-                    <h3>Delphine Cane Velvet Accent Chair</h3>
+                    <h3>Cómoda 4 cajones</h3>
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Praesentium.
+                      Mueble de dormitorio con 4 cajones, tiradores y correderas
+                      de plástico. Base tratada para mayor durabilidad.
                     </p>
                     <div class="evaluation">
                       <i class="fa-solid fa-star"></i>
@@ -224,18 +240,68 @@
                     </div>
                   </div>
                 </article>
-                <article class="products-section__product col-6">
+                <article
+                  class="products-section__product col-6 col-md-4 col-lg-3"
+                >
                   <div>
                     <img
-                      src="https://754969b0.rocketcdn.me/furnob/wp-content/uploads/2021/12/hay-1-600x684.jpg"
-                      alt=""
+                      src="./assets/images/mueble-dormitorio-2.webp"
+                      alt="Veladora de 2 cajones con tirador"
                     />
                   </div>
                   <div>
-                    <h3>Delphine Cane Velvet Accent Chair</h3>
+                    <h3>Velador 2 cajones con tirador</h3>
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Praesentium.
+                      Velador de 2 cajones en MDP con acabado en Pintura UV.
+                      Diseño moderno para tu decoración.
+                    </p>
+                    <div class="evaluation">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="products-section__product col-6 col-md-4 col-lg-3"
+                >
+                  <div>
+                    <img
+                      src="./assets/images/mueble-oficina-1.webp"
+                      alt="Mueble de oficina"
+                    />
+                  </div>
+                  <div>
+                    <h3>Escritorio</h3>
+                    <p>
+                      Este escritorio es perfecto para el trabajo en casa,
+                      cuenta con un diseño moderno.
+                    </p>
+                    <div class="evaluation">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="products-section__product col-6 col-md-4 col-lg-3"
+                >
+                  <div>
+                    <img
+                      src="./assets/images/mueble-oficina-2.webp"
+                      alt="Mueble de escritorio"
+                    />
+                  </div>
+                  <div>
+                    <h3>Escritorio</h3>
+                    <p>
+                      En tu dormitorio u oficina, este escritorio de oficina se
+                      adaptará a tus necesidades.
                     </p>
                     <div class="evaluation">
                       <i class="fa-solid fa-star"></i>
@@ -251,8 +317,8 @@
           </section>
         </div>
       </main>
-      <footer class="footer">
-        <div class="container-fluid">
+      <footer class="footer py-5">
+        <div class="container">
           <div class="footer__information row gy-3">
             <div class="col-12 col-md-6 col-lg-3">
               <a href="#">
@@ -261,13 +327,9 @@
                   alt="Logo de Muebles DC"
                 />
               </a>
-              <ul>
-                <li>Contact our customer happiness team</li>
-                <li>Monday-Friday 9am-5pm</li>
-                <li>(02)6188 8062</li>
-              </ul>
+              <p>Muebles únicos, calidad excepcional.</p>
               <div>
-                <p>Our social</p>
+                <p>Nuestras redes sociales</p>
                 <div class="social-networks">
                   <div>
                     <i class="fa-brands fa-tiktok"></i>
@@ -282,35 +344,51 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <h2>Shop</h2>
+              <h2>Páginas</h2>
               <ul>
-                <li><a href="#">Shop dog</a></li>
-                <li><a href="#">Shop cat</a></li>
-                <li><a href="#">Shop brands</a></li>
-                <li><a href="#">On sale</a></li>
-                <li><a href="#">Auto-Delivery</a></li>
-                <li><a href="#">Aussie Hazard Cover</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
               </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <h2>Customer Services</h2>
+              <h2>Catálogo</h2>
               <ul>
-                <li><a href="#">Track Order</a></li>
-                <li><a href="#">Returns</a></li>
-                <li><a href="#">Shipping Info</a></li>
-                <li><a href="#">Recalls & Advisories</a></li>
-                <li><a href="#">Pet Store Locator</a></li>
-                <li><a href="#">Help</a></li>
+                <li><a href="#">Cocina y Comedor</a></li>
+                <li><a href="#">Salón y entretenimiento</a></li>
+                <li><a href="#">Dormitorio</a></li>
+                <li><a href="#">Oficina y Estudio</a></li>
               </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <h2>Our Company</h2>
+              <h2>Contacto</h2>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers for Furnob</a></li>
-                <li><a href="#">Social Responsibility</a></li>
-                <li><a href="#">Store Locations and Events</a></li>
+                <li>
+                  <a href="tel:987654321">
+                    <i class="fa-solid fa-phone"></i>
+                    987 654 321
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    987 654 321
+                  </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Pedrito Alimaña #123 - San Juan
+                </li>
               </ul>
+            </div>
+          </div>
+          <div class="footer__copyright row mt-2">
+            <div class="col-12 text-center">
+              <p>
+                Copyright &copy; 2024 | Desarollado por Angel Emilio Gala Flores
+              </p>
             </div>
           </div>
         </div>
