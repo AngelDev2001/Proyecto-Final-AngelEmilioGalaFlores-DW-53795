@@ -55,14 +55,16 @@ header {
 
     a {
       width: max-content;
-      &:hover{
-        background-color: transparent;
+      &:hover {
+        background-color: #f19335;
+        transition-duration: 0.3s;
+        border-color: #f19335;
       }
     }
   }
 
   .hero__image {
-    max-width: 35em;
+    max-width: 20em;
     margin: 0 auto;
     img {
       width: 100%;
@@ -114,9 +116,12 @@ header {
       background-color: transparent;
       color: #000;
       &:hover {
-        border: 1px solid #000;
-        background-color: transparent;
-        color: #000;
+        color: #f19335;
+      }
+      &:hover i {
+        transform: translateX(0.2em);
+        color: #f19335;
+        transition-duration: 0.3s;
       }
     }
   }
@@ -130,6 +135,14 @@ header {
   p {
     color: #8a8b8e;
     font-size: 0.9em;
+  }
+
+  a {
+    background-color: #f19335;
+    border: none;
+    &:hover {
+      background-color: #e27715;
+    }
   }
   .products-section__product {
     div:first-child {
@@ -167,7 +180,7 @@ header {
       text-decoration: none;
       color: #000;
       &:hover {
-        color: #a75a1c;
+        color: #f19335;
       }
     }
     > div:first-child {
@@ -192,6 +205,12 @@ header {
           align-items: center;
           border: 1px solid #000;
           border-radius: 50%;
+          color: #f19335;
+          &:hover {
+            background-color: #f19335;
+            color: #fff;
+            transition-duration: 0.3s;
+          }
         }
       }
     }
@@ -199,6 +218,75 @@ header {
       font-size: 1.3em;
       margin-bottom: 1em;
     }
+  }
+}
+
+/* PÁGINA DE NOSOTROS */
+.hero-section-about {
+  background-image: url("https://zimmerei-rv-holzbau.de/site/assets/files/1/rv-holzbau-fassadenbau-trockenbau-zimmererarbeiten-slide.-desktop.jpg");
+  background-position: center;
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    text-align: center;
+    z-index: 200;
+    h1 {
+      font-size: 4em;
+    }
+  }
+}
+
+/* PÁGINA DE CATÁLOGO */
+.hero-section-catalogue {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/020/544/792/large_2x/gradient-orange-waves-background-fluid-gradient-shapes-composition-vector.jpg");
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    text-align: center;
+    z-index: 200;
+    h1 {
+      font-size: 4em;
+    }
+  }
+}
+
+/* PÁGINA DE CONTACTO */
+.hero-section {
+  background-image: url("https://img.freepik.com/fotos-premium/computador-com-grafico-e-calculadora-na-mesa_218381-2555.jpg?w=1380");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 20em;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    text-align: center;
+    z-index: 200;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    z-index: 100;
   }
 }
 
