@@ -297,6 +297,65 @@ header {
     }
   }
 }
+.separacion-margen {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+/* PÁGINA DE BLOG */
+.hero-section-blog {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/020/544/792/large_2x/gradient-orange-waves-background-fluid-gradient-shapes-composition-vector.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+
+  div {
+    text-align: center;
+    z-index: 200;
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
+
+.blog-section {
+  article {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      /* font-size: 2.5em; */
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    p {
+      margin-bottom: 2em;
+    }
+  }
+
+  img {
+    align-self: center;
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    margin: 2em 0;
+  }
+}
 
 /* PÁGINA DE CONTACTO */
 .hero-section-contact {
