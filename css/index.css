@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+:root {
+  --primary-color: #000000;
+  --secondary-color: #f19335;
+  --tertiary-color: #f6f6f6;
+  --quaternary-color: #8a8b8e;
+
+  --yellow: gold;
+  --white: #ffffff;
+
+  --font-family: "Ubuntu", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   color: #000;
@@ -79,8 +97,8 @@ header {
   border-radius: 0;
 }
 
-.categories-section {
-  .categories-section__information {
+.blog-section {
+  .blog-section__information {
     h2 {
       font-size: 2em;
       margin-bottom: 0.8em;
@@ -91,7 +109,7 @@ header {
     }
   }
 
-  .categories-section__category {
+  .blog-section__category {
     h2 {
       font-weight: 400;
     }
@@ -138,6 +156,8 @@ header {
   }
 
   a {
+    max-width: 30em;
+    margin: 2em auto;
     background-color: #f19335;
     border: none;
     &:hover {
@@ -196,7 +216,7 @@ header {
         display: flex;
         gap: 0.8em;
 
-        div {
+        a {
           background-color: transparent;
           width: 2em;
           height: 2em;
@@ -252,18 +272,20 @@ header {
   }
 }
 
-.section-about-text__description {
-  p {
-    font-size: 0.9em;
+.section-about {
+  .section-about__description {
+    p {
+      color: var(--quaternary-color);
+      font-size: 0.9em;
+    }
   }
-}
-
-.section-about-text__maps {
-  h2 {
-    font-size: 2em;
-  }
-  iframe {
-    width: 100%;
+  .section-about__maps {
+    h2 {
+      font-size: 2em;
+    }
+    iframe {
+      width: 100%;
+    }
   }
 }
 
@@ -333,18 +355,20 @@ header {
   }
 }
 
-.blog-section {
+.blogsito-section {
   article {
     display: flex;
     flex-direction: column;
     h2 {
-      /* font-size: 2.5em; */
+      /* font-size: 2em; */
     }
     h3 {
-      font-size: 1.5em;
+      /* font-size: 1.5em; */
     }
     p {
-      margin-bottom: 2em;
+      /* margin-bottom: 2em; */
+      color: #8a8b8e;
+      font-size: 0.9em;
     }
   }
 
@@ -390,6 +414,7 @@ header {
 }
 
 form {
+  max-width: 50em;
   .btn-formulario {
     background-color: #f19335;
     border: none;
@@ -417,8 +442,8 @@ form {
     }
   }
 
-  .categories-section {
-    .categories-section__information {
+  .blog-section {
+    .blog-section__information {
       h2 {
         font-size: 2.5em;
       }
@@ -451,6 +476,14 @@ form {
       .evaluation {
         color: gold;
         font-size: 0.8em;
+      }
+    }
+  }
+
+  .section-about {
+    .section-about__description {
+      p {
+        font-size: 1em;
       }
     }
   }
@@ -490,6 +523,26 @@ form {
       img {
         width: 100%;
       }
+    }
+  }
+
+  .blogsito-section {
+    article {
+      h2 {
+        font-size: 2.5em;
+      }
+      p {
+        color: #8a8b8e;
+        font-size: 1em;
+      }
+    }
+
+    img {
+      align-self: center;
+      width: 100%;
+      height: 35em;
+      object-fit: cover;
+      margin: 2em 0;
     }
   }
 }
