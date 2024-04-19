@@ -100,7 +100,6 @@ header {
 }
 
 .blog-section {
-  background-color: red;
 
   .blog-section__information {
     h2 {
@@ -137,11 +136,12 @@ header {
       background-color: transparent;
       color: #000;
       border: none;
+      padding: 0;
       &:hover {
         color: #f19335;
       }
       &:hover i {
-        transform: translateX(0.2em);
+        transform: translateX(0.5em);
         color: #f19335;
         transition-duration: 0.3s;
       }
@@ -161,7 +161,7 @@ header {
 .products-section {
   h2 {
     font-size: 2em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.5em;
   }
   p {
     color: #8a8b8e;
@@ -173,11 +173,22 @@ header {
     margin: 2em auto;
     background-color: #f19335;
     border: none;
+    border-radius: 0 !important;
     &:hover {
       background-color: #e27715;
     }
+    &:active {
+      background-color: #e27715 !important;
+    }
+    &:focus {
+      background-color: #e27715;
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
   }
   .products-section__product {
+
     div:first-child {
       margin-bottom: 1em;
     }
@@ -504,6 +515,12 @@ form {
 
   .footer {
     font-size: 1em;
+  }
+
+  .section-about__maps{
+    h2{
+      font-size: 2.5em;
+    }
   }
 }
 
