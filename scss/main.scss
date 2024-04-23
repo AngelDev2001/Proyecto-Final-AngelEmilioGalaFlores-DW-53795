@@ -1,0 +1,17 @@
+@import "utilities/variables";
+@import "utilities/functions";
+@import "utilities/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "base/reset";
+@import "base/typo";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "views/home";
+@import "views/about";
+@import "views/blog";
+@import "views/catalogue";
+@import "views/contact";

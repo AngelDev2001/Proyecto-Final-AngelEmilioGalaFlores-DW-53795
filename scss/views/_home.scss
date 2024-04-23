@@ -1,0 +1,139 @@
+.hero {
+  background-color: #f6f6f6;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    color: #000;
+    h2 {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+    p {
+      font-size: 0.9em;
+      color: #8a8b8e;
+    }
+
+    a {
+      @include button(transparent, #000, max-content);
+    }
+  }
+
+  &__image {
+    max-width: 20em;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.blog-section {
+  &__information {
+    h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      color: #8a8b8e;
+      font-size: 0.9em;
+    }
+  }
+
+  &__category {
+    h2 {
+      font-weight: 400;
+      margin-top: 0.5em;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    > a {
+      display: flex;
+      height: 30em;
+      overflow: hidden;
+      &:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    > div a {
+      background-color: transparent;
+      color: #000;
+      border: none;
+      padding: 0;
+      &:hover {
+        color: #f19335;
+      }
+      &:hover i {
+        transform: translateX(0.5em);
+        color: #f19335;
+        transition-duration: 0.3s;
+      }
+      &:focus {
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+        border: none;
+      }
+      &:active {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.products-section {
+  h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  p {
+    color: #8a8b8e;
+    font-size: 0.9em;
+  }
+
+  a {
+    max-width: 30em;
+    margin: 2em auto;
+    background-color: #f19335;
+    border: none;
+    border-radius: 0 !important;
+    &:hover {
+      background-color: #e27715;
+    }
+    &:active {
+      background-color: #e27715 !important;
+    }
+    &:focus {
+      background-color: #e27715;
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  &__product {
+    div:first-child {
+      margin-bottom: 1em;
+    }
+    h3 {
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    .evaluation {
+      color: gold;
+      font-size: 0.8em;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

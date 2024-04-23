@@ -1,0 +1,17 @@
+/* PÁGINA DE CONTACTO */
+.hero-section-contact {
+  @include hero-section(
+    "https://img.freepik.com/fotos-premium/computador-com-grafico-e-calculadora-na-mesa_218381-2555.jpg?w=1380"
+  );
+}
+
+form {
+  max-width: 50em;
+  .btn-formulario {
+    background-color: #f19335;
+    border: none;
+    &:hover {
+      background-color: #e27715;
+    }
+  }
+}

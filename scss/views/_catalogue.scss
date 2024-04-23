@@ -1,0 +1,11 @@
+/* PÁGINA DE CATÁLOGO */
+.hero-section-catalogue {
+  @include hero-section(
+    "https://static.vecteezy.com/system/resources/previews/020/544/792/large_2x/gradient-orange-waves-background-fluid-gradient-shapes-composition-vector.jpg"
+  );
+}
+
+.separacion-margen {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
