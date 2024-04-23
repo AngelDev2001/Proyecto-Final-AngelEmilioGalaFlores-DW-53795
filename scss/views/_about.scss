@@ -1,0 +1,23 @@
+/* PÁGINA DE NOSOTROS */
+.hero-section-about {
+  @include hero-section(
+    "https://zimmerei-rv-holzbau.de/site/assets/files/1/rv-holzbau-fassadenbau-trockenbau-zimmererarbeiten-slide.-desktop.jpg"
+  );
+}
+
+.section-about {
+  &__description {
+    p {
+      color: var(--quaternary-color);
+      font-size: 0.9em;
+    }
+  }
+  &__maps {
+    h2 {
+      font-size: 2em;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+}

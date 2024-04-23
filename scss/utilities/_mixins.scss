@@ -1,0 +1,47 @@
+@mixin hero-section($image) {
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+
+  div {
+    text-align: center;
+    z-index: 200;
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
+
+@mixin button($bgcolor, $color, $width) {
+  width: $width;
+  background-color: $bgcolor;
+  color: $color;
+  border-color: #000;
+  border-radius: 0;
+  font-size: 0.9em;
+
+  &:hover,
+  &:focus {
+    background-color: #f19335;
+    transition-duration: 0.3s;
+    border-color: #f19335;
+    outline: none;
+    box-shadow: none;
+  }
+}
